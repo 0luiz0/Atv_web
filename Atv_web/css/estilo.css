@@ -47,16 +47,6 @@ body {
     color: #dd6b20; 
 }
 
-#menu-toggle {
-    display: none;
-}
-
-#menu-sanduiche {
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-}
-
 @media (max-width: 768px) {
     #menu {
         flex-direction: column;
@@ -78,10 +68,6 @@ body {
         height: 150px;
     }
 
-    #menu-sanduiche {
-        display: block;
-        margin: 10px;
-    }
 }
 
 #conteudo {
@@ -123,10 +109,6 @@ body {
 .social-icon {
     width: 75px;
     height: 75px;
-}
-
-#menu-toggle:checked + #menu {
-    display: block;
 }
 
 #redes-sociais-contato a {
