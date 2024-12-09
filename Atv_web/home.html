@@ -2,46 +2,38 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExploraMundo - Home</title>
     <link rel="stylesheet" href="css/estilo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="cabecalho">
+    <header id="cabecalho">
         <img id="logo" src="img/logo.webp" alt="Logo ExploraMundo">
-    </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" id="menu-sanduiche">&#9776;</label>
+        <ul id="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+        </ul>
+    </header>
 
-    <ul id="menu">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="historia.html">História</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="contato.html">Fale Conosco</a></li>
-    </ul>
-
-    <div id="conteudo">
+    <main id="conteudo">
         <h1>Bem-vindo à ExploraMundo!</h1>
-        <p>Planeje sua próxima aventura com a nossa agência de viagens! Transformamos sonhos em experiências inesquecíveis.</p>
+        <p>Planeje sua próxima aventura com a nossa agência de viagens!</p>
         <img src="img/Paisagem_home.webp" alt="Paisagem de viagem">
-    </div>
+    </main>
     
     <footer id="rodape">
         <div id="informacoes">
             <p><strong>ExploraMundo</strong> - Agência de Viagens</p>
             <p>Telefone: (11) 1234-5678</p>
             <p>Email: contato@exploramundo.com.br</p>
-            <p>Endereço: Av. Bento Munhoz da Rocha Neto, 123 - Paranaguá, PR</p>
         </div>
         <div id="redes-sociais">
-            <a href="https://www.instagram.com/exploramundo" target="_blank">
-                <img src="img/instagram.webp" alt="Instagram" class="social-icon">
-            </a>
-            <a href="https://www.facebook.com/exploramundo" target="_blank">
-                <img src="img/facebook.png" alt="Facebook" class="social-icon">
-            </a>
+            <a href="#"><img src="img/instagram.webp" alt="Instagram" class="social-icon"></a>
+            <a href="#"><img src="img/facebook.png" alt="Facebook" class="social-icon"></a>
         </div>
     </footer>
 </body>
