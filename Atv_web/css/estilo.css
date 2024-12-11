@@ -53,14 +53,21 @@ body {
 #menu-toggle {
     display: none; 
 }
+/* Esconde o checkbox que controla a exibição do menu em telas pequenas. */
 
 #menu-sanduiche {
-    font-size: 30px;
+    font-size: 40px;
+    display: flex;
+    height: 160px;
     cursor: pointer;
     display: none; 
-    padding: 10px;
+    padding: 30px;
     color: white;
+    
 }
+/* Estiliza o ícone do menu sanduíche:
+   - Define tamanho da fonte e padding.
+   - Inicialmente está escondido. */
 
 
 @media (max-width: 768px) {
@@ -69,18 +76,24 @@ body {
         flex-direction: column; 
         width: 100%;
         position: absolute;
-        top: 75px;
+        top: 100px;
         left: 0;
         background-color: #f4e2d8;
     }
+    /* Em telas menores que 768px:
+       - Esconde o menu por padrão.
+       - Exibe os itens verticalmente ao ser ativado.
+       - Define o menu como um elemento de largura total que aparece na parte superior. */
 
     #menu-toggle:checked + #menu-sanduiche + #menu {
         display: flex; 
     }
+    /* Quando o checkbox é marcado, o menu é exibido. */
 
     #menu-sanduiche {
         display: block; 
     }
+    /* Mostra o ícone do menu sanduíche em telas pequenas. */
 
     #menu a {
         font-size: 35px;
