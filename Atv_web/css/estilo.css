@@ -1,20 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
-/* Configuração global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     color: #333;
 }
 
-/* Cabeçalho */
 #cabecalho {
     height: 180px;
     background-color: #2a4365; 
@@ -28,10 +25,9 @@ body {
     width: 160px;
 }
 
-/* Menu */
 #menu {
     display: flex;
-    justify-content: space-between; /* Espaça igualmente os itens */
+    justify-content: space-between; 
     align-items: center;
     list-style: none;
     background-color: #f4e2d8;
@@ -45,7 +41,7 @@ body {
 #menu a {
     text-decoration: none;
     color: #2a4365; 
-    padding: 20px; /* Espaçamento interno */
+    padding: 20px; 
     transition: color 0.3s ease;
 }
 
@@ -53,24 +49,24 @@ body {
     color: #dd6b20; 
 }
 
-/* Ícone do menu sanduíche */
+
 #menu-toggle {
-    display: none; /* Oculta checkbox */
+    display: none; 
 }
 
 #menu-sanduiche {
     font-size: 30px;
     cursor: pointer;
-    display: none; /* Oculto em telas grandes */
+    display: none; 
     padding: 10px;
     color: white;
 }
 
-/* Estilos para telas menores */
+
 @media (max-width: 768px) {
     #menu {
-        display: none; /* Oculta menu padrão */
-        flex-direction: column; /* Exibe em coluna quando visível */
+        display: none; 
+        flex-direction: column; 
         width: 100%;
         position: absolute;
         top: 75px;
@@ -79,21 +75,20 @@ body {
     }
 
     #menu-toggle:checked + #menu-sanduiche + #menu {
-        display: flex; /* Exibe menu ao clicar */
+        display: flex; 
     }
 
     #menu-sanduiche {
-        display: block; /* Exibe ícone do menu sanduíche */
+        display: block; 
     }
 
     #menu a {
         font-size: 35px;
         padding: 10px;
-        text-align: center; /* Centraliza os itens */
+        text-align: center; 
     }
 }
 
-/* Conteúdo principal */
 #conteudo {
     padding: 20px;
     text-align: center;
@@ -107,7 +102,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Rodapé */
 #rodape {
     background-color: #2a4365; 
     color: white;
